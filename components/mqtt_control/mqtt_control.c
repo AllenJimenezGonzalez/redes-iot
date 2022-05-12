@@ -63,7 +63,7 @@ void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event
     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
     esp_mqtt_event_handle_t event = event_data;
     client = event->client;
-    int msg_id;
+
     //TODO create a global variable for topic and message... copy with strncpy ()
     switch ((esp_mqtt_event_id_t)event_id)
     {

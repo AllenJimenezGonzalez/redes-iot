@@ -7,7 +7,7 @@
 
 uint8_t _Connection_sts_wifi;
 
-void initialize_wifi();
+esp_err_t initialize_wifi(const char *wifi_name, const char *wifi_password);
 void wait_wifi_Connection();
 uint8_t is_wifi_connected();
 void disconnect_wifi();

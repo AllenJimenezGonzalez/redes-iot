@@ -1,6 +1,5 @@
-set(COMPONENT_SRCDIRS .)
-set(COMPONENT_ADD_INCLUDEDIRS .)
-set(COMPONENT_PRIV_REQUIRES main esp_wifi wifi)
 
-set(COMPONENT_REQUIRES )
-register_component()
+
+idf_component_register(SRCS "wifi.c"
+                    INCLUDE_DIRS "."
+                    REQUIRES nvs_flash)

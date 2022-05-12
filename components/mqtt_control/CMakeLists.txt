@@ -1,6 +1,5 @@
 set(COMPONENT_SRCDIRS .)
 set(COMPONENT_ADD_INCLUDEDIRS .)
-set(COMPONENT_PRIV_REQUIRES main nvs_flash)
-set(COMPONENT_REQUIRES )
+set(COMPONENT_REQUIRES main nvs_flash )
 
 register_component()
