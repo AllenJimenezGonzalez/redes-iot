@@ -32,7 +32,7 @@ void task_captura_humedad(void *args)
             ultima_captura = esp_timer_get_time()/1000;
             ESP_LOGI("t_Hu", "Cambio humedad %.4f", humedad);
             sprintf(data, "%.4f", humedad);
-            publish_data("clase/redes/sensor/humedad", data);
+            publish_data("sensor-data", data);
         }
         vTaskDelay(100 / portTICK_PERIOD_MS);
     }
